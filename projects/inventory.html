@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventory Management System | Symbolicdeth</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Symbolicdeth</div>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Project Hero -->
+    <section class="project-page">
+
+        <p class="subtitle">SOFTWARE DEVELOPMENT / DATABASE</p>
+
+        <h1>Inventory Management System</h1>
+
+        <p class="project-intro">
+            A Python and SQLite inventory management system inspired by
+            real warehouse operations, designed to manage products,
+            stock movements, goods receiving and inventory reports.
+        </p>
+
+        <div class="project-tags">
+            <span>Python</span>
+            <span>SQLite</span>
+            <span>Tkinter</span>
+            <span>SQL</span>
+        </div>
+
+    </section>
+
+
+    <!-- Overview -->
+    <section class="project-section">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            This project was created as a practical software development
+            exercise based on warehouse inventory operations.
+        </p>
+
+        <p>
+            The system manages inventory data through a SQLite database
+            and provides both a command-line interface and a desktop
+            graphical interface built with Tkinter.
+        </p>
+
+        <p>
+            The project focuses on applying Python programming and SQL
+            concepts to a realistic business problem.
+        </p>
+
+    </section>
+
+    <!-- Application -->
+    <section class="project-section">
+
+         <h2>Application</h2>
+
+        <p>
+            The application provides a graphical interface for managing
+            products, stock levels and warehouse operations.
+        </p>
+
+       <img
+           src="../images/Inventario.png"
+           alt="Inventory Management System graphical interface"
+           class="project-detail-image">
+
+</section>
+
+
+    <!-- Features -->
+    <!-- Key Features -->
+<section class="project-section">
+
+    <h2>Key Features</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <h3>Product Management</h3>
+            <p>
+                Create, update, delete and query products
+                while maintaining stock information.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Goods In</h3>
+            <p>
+                Register incoming stock and maintain
+                receiving records for warehouse operations.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Stock Movements</h3>
+            <p>
+                Track incoming and outgoing inventory
+                movements and maintain movement history.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Stock Alerts</h3>
+            <p>
+                Identify products that have reached or
+                fallen below their minimum stock level.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Reports</h3>
+            <p>
+                Generate inventory information and
+                analyse stock data using SQL queries.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Architecture -->
+    <section class="project-section">
+
+        <h2>Project Architecture</h2>
+
+        <p>
+            The application follows a modular structure where each Python
+        module is responsible for a specific part of the inventory system.
+        </p>
+
+        <div class="architecture">
+
+            <div class="architecture-item architecture-main">
+                <strong>app.py</strong>
+                <span>Tkinter graphical interface</span>
+            </div>
+
+            <div class="architecture-item">
+                <strong>products.py</strong>
+                <span>Product management and CRUD operations</span>
+            </div>
+
+            <div class="architecture-item">
+                <strong>movements.py</strong>
+                <span>Stock movements and inventory history</span>
+            </div>
+
+            <div class="architecture-item">
+                <strong>goods_in.py</strong>
+                <span>Goods receiving and incoming stock</span>
+            </div>
+
+            <div class="architecture-item">
+                <strong>reports.py</strong>
+                <span>Reports and inventory analysis</span>
+            </div>
+
+            <div class="architecture-item architecture-database">
+            <strong>database.py</strong>
+            <span>SQLite connection, schema and database operations</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- SQL -->
+    <section class="project-section">
+
+        <h2>SQL & Database Concepts</h2>
+
+        <p>
+            The project was also used to practice relational database
+            design and SQL operations.
+        </p>
+
+        <div class="skills-container">
+
+            <div class="skill">CREATE TABLE</div>
+            <div class="skill">PRIMARY KEY</div>
+            <div class="skill">FOREIGN KEY</div>
+            <div class="skill">CHECK</div>
+            <div class="skill">INSERT</div>
+            <div class="skill">SELECT</div>
+            <div class="skill">UPDATE</div>
+            <div class="skill">DELETE</div>
+            <div class="skill">JOIN</div>
+            <div class="skill">GROUP BY</div>
+            <div class="skill">Subqueries</div>
+            <div class="skill">Transactions</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Data Integrity -->
+    <section class="project-section">
+
+        <h2>Data Integrity</h2>
+
+        <p>
+            Stock movements use database transactions so that failed
+            operations do not leave the inventory in an inconsistent state.
+        </p>
+
+        <p>
+            SQL parameters are also used when interacting with the database,
+            helping prevent SQL injection.
+        </p>
+
+    </section>
+
+
+    <!-- Technologies -->
+    <section class="project-section">
+
+        <h2>Technology Stack</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python 3</div>
+            <div class="skill">SQLite</div>
+            <div class="skill">Tkinter</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Future Improvements -->
+    <section class="project-section">
+
+        <h2>Future Improvements</h2>
+
+        <ul class="feature-list">
+
+            <li>
+                Export reports to CSV or Excel
+            </li>
+
+            <li>
+                Migrate the database to PostgreSQL
+            </li>
+
+            <li>
+                Build a web interface using Flask
+            </li>
+
+            <li>
+                Add automated testing with pytest
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Source Code -->
+    <section class="project-section">
+
+        <h2>Source Code</h2>
+
+        <p>
+            The complete source code and project documentation
+            are available on GitHub.
+        </p>
+
+        <a
+            href="https://github.com/Symbolicdeth/inventory-warehouse-sql"
+            target="_blank"
+            class="button">
+            View on GitHub →
+        </a>
+
+    </section>
+
+
+    <!-- Back -->
+    <section class="project-section">
+
+        <a href="../index.html#projects" class="project-link">
+            ← Back to projects
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Symbolicdeth</p>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
