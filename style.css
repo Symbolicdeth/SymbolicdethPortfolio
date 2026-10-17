@@ -174,26 +174,10 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.project span {
-    .project-tags {
-    margin-bottom: 25px;
-}
-
-.project-link {
-    color: #58a6ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-}
-    display: inline-block;
-    font-size: 13px;
-    color: #58a6ff;
-    margin-right: 10px;
-}
-
+.project-tags { margin-bottom: 25px; }
+.project-tags span { display: inline-block; font-size: 13px; color: #58a6ff; margin-right: 10px; }
+.project-link { color: #58a6ff; text-decoration: none; font-weight: bold; }
+.project-link:hover { text-decoration: underline; }
 
 /* =========================
    CONTACT
@@ -356,3 +340,56 @@ footer {
 .architecture-database {
     grid-column: 1 / -1;
 }
+
+/* Embedded project previews */
+.project-preview-frame,
+.project-demo-frame {
+    display: block;
+    width: 100%;
+    border: 1px solid #303d50;
+    border-radius: 8px;
+    background: #080d19;
+}
+
+.project-preview-frame {
+    height: 245px;
+    margin-bottom: 24px;
+    pointer-events: auto;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+}
+
+.project-demo-frame {
+    min-height: 520px;
+    height: min(72vh, 760px);
+}
+
+@media (max-width: 700px) {
+    .project-demo-frame {
+        min-height: 440px;
+        height: 70vh;
+    }
+}
+
+/* VisionSpeed AI video preview */
+.project-video-preview,
+.project-video-demo {
+    display: block;
+    width: 100%;
+    border: 1px solid #303d50;
+    border-radius: 8px;
+    background: #080d19;
+    object-fit: cover;
+}
+
+.project-video-preview {
+    height: 245px;
+    margin-bottom: 24px;
+}
+
+.project-video-demo {
+    min-height: 260px;
+    max-height: 760px;
+    aspect-ratio: 16 / 9;
+}
+
